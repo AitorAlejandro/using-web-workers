@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Utilizando Web Workers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .page {
+      font-family: monospace;
+      text-align: center;
+      max-width: 25em;
+      margin: auto;
+    }
+    p {
+        text-align: left;
+    }
+    hgroup {
+      border-bottom: 1px solid;
+      margin-bottom: 1em;
+    }
+    form {
+        margin: 2em 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <hgroup>
+      <h1>Utilizando Web Workers</h1>
+      <h2>Demo2</h2>
+    </hgroup>
+    <div>
+      <p>En esta demo estamos haciendo que la función pesada se ejecute en un web worker (en otro thread).</p>
+      <p>En esta ocasión sí puedes interactuar con la página mientras tenemos al web worker trabajando con el mismo bucle que tenemos en la demo1.</p>
+    </div>
+    <form>
+        <label for="c1">Etiqueta:</label>
+        <input name="c1" id="c1" type="text">
+    </form>
+    <hr>
+    <div>
+        <output id="output">ejecutando bucle ...</output>
+    </div>
+    <hr>
+    <a href="https://aitoralejandro.github.io/using-web-workers/">&lt;-- lista demos</a>
+  </div>
+<script src="demo2.js"></script>
+</body>
+</html>
